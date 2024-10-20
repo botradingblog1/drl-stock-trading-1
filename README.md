@@ -22,9 +22,21 @@ pip install protobuf==3.20.0
 
 ```
 
-### Example training command:
+### Example training command for the Simple DQN:
 ```
 python train_model.py --cuda --run="botrain1"
+```
+
+### Example training command for the 1D Convolution DQN:
+```
+python train_model_conv.py --cuda --run="botrain1-conv"
+```
+
+### Example for running the model
+Set --conv flag to False to use the Simple DQN Network.
+Set --conv flag to True to use the 1D Conv Network.
+```
+python run_model.py --data="" --model="" --cuda --commission=0.0 --conv=False -n="borun1"
 ```
 
 ### Starting TensorBoard
